@@ -2,7 +2,8 @@
 let strftime = require('strftime');
 let express = require('express');
 let app = express();
-let port = 3000;
+
+app.set('port', (process.env.PORT || 5000));
 
 app.use('/css', express.static('public/css'));
 
@@ -15,7 +16,7 @@ app.get('/:timestring', function(req,res){
 	res.json(parseTime(timestring));
 });
 
-app.listen(port, function(){
+app.listen(app.get('port'), function(){
 	console.log(`Now listening on port ${port}`);
 });
 
