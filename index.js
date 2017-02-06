@@ -17,7 +17,7 @@ app.get('/:timestring', function(req,res){
 });
 
 app.listen(app.get('port'), function(){
-	console.log(`Now listening on port ${port}`);
+	console.log(`Now listening on port ${app.get('port')}`);
 });
 
 
