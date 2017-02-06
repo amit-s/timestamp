@@ -1,0 +1,12 @@
+#main{
+	margin-left: 10%;
+	font-family: 'Lato', sans-serif;
+}
+
+.usage{
+	color: red;
+}
+
+.usagebg{
+	background: rgba(255,0,0,0.1);
+}
